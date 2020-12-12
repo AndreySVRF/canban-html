@@ -1,0 +1,15 @@
+{
+  "name": "canban-html",
+  "version": "1.0.0",
+  "description": "html template for canban project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html",
+    "scss"
+  ],
+  "author": "AndreySVRF <andreysvrf@yandex.ru>",
+  "license": "ISC"
+}
