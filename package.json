@@ -11,5 +11,9 @@
     "scss"
   ],
   "author": "AndreySVRF <andreysvrf@yandex.ru>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.10.1",
+    "webpack-cli": "^4.2.0"
+  }
 }
