@@ -20,7 +20,9 @@ module.exports = {
   devtool: isDev ? 'source-map' : false,
   devServer: {
     port: 3000,
-    hot: isDev
+    hot: isDev,
+    host: '127.0.0.1',
+    contentBase: path.resolve(__dirname, '../src')
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -36,6 +38,10 @@ module.exports = {
         {
           from: path.resolve(__dirname, 'src/favicon.ico'),
           to: path.resolve(__dirname, 'dist')
+        },
+        {
+          from: path.resolve(__dirname, 'src/img'),
+          to: path.resolve(__dirname, 'dist/img')
         }
       ]
     }),
@@ -53,6 +59,12 @@ module.exports = {
           'sass-loader',
         ],
       },
+      {
+        test: /\.svg/,
+        use: [
+          'svg-url-loader'
+        ]
+      }
     ],
   },
 }

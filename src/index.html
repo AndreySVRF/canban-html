@@ -3,14 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="shortcut icon" href="favicon.ico">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>KanBan</title>
 </head>
 <body>
 
-<header>Hello</header>
+<div class="kanban">
+  <div class="kanban__sidebar">
+    <div class="kanban__sidebar-header">
+      <img src="./img/i/list.svg" alt="">
+      Проекты
+    </div>
+    <div class="kanban__sidebar-list">
+      <div class="sidebar-list__overflow">
+        <a href="" class="sidebar-list__item item-link">
+          <span class="item-color" style="background: #61DC6D"></span>
+          <span class="item-title">Написать приложение на React JS</span>
+          <span class="item-remove"></span>
+        </a>
+        <a href="" class="sidebar-list__item item-link active">
+          <span class="item-color" style="background: #617CDC"></span>
+          <span class="item-title">Написать ТЗ</span>
+          <span class="item-remove"></span>
+        </a>
+        <a href="" class="sidebar-list__item item-link">
+          <span class="item-color" style="background: #DCC161"></span>
+          <span class="item-title">Асметитить разработку ИМ</span>
+          <span class="item-remove"></span>
+        </a>
+        <a href="" class="sidebar-list__item item-link">
+          <span class="item-color" style="background: #D961DC"></span>
+          <span class="item-title">Купить видеокарту</span>
+          <span class="item-remove"></span>
+        </a>
+      </div>
+      <a href="" class="sidebar-list__item item-add">
+        Добавить проект
+      </a>
+    </div>
+    <div class="kanban__sidebar-footer">
+      <div class="sidebar-footer__extra">
+        <a href="" class="extra__item">
+          <img src="./img/i/settings.svg" alt="">
+          Настройки
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="kanban__content">content</div>
+</div>
 
 </body>
 </html>
