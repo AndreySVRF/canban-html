@@ -23,7 +23,8 @@ body {
   align-items: center;
 }
 
-::-webkit-scrollbar { /* 1 - скроллбар */
+::-webkit-scrollbar,
+-moz-scrollbar { /* 1 - скроллбар */
   width: 4px;
   height: 4px;
   background-color: #FFFFFF;
@@ -75,6 +76,4 @@ body {
       background-color: darken($blue, 10%);
     }
   }
-
-
 }
